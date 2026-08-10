@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "project": "3d-websites-hackathon",
+  "command": "pnpm run build",
+  "seed": null,
+  "buildContext": {
+    "schemaVersion": 2,
+    "project": "3d-websites-hackathon",
+    "mode": "production",
+    "baseUrl": "/",
+    "nodeEnvironment": "production",
+    "environment": {
+      "VITE_BUILD_REF": "a7e25a82c96fc714a46ec476e1a16407340a7a9d",
+      "VITE_RUNTIME_SURFACE": "gallery"
+    },
+    "toolchain": {
+      "nodeVersion": "24.19.0",
+      "pnpmVersion": "11.20.0"
+    },
+    "buildTarget": {
+      "platform": "browser",
+      "javascript": "es2022"
+    },
+    "sourceInputDigest": "a7e25a82c96fc714a46ec476e1a16407340a7a9d720dcfe151446554465f1a52"
+  },
+  "releaseManifest": {
+    "path": "release-manifest.json",
+    "bytes": 1889,
+    "sha256": "673cefc961ff209d84d2c5ed49de85620c602a4a9704857eb8210e1fd54683bb",
+    "buildInputDigest": "a7e25a82c96fc714a46ec476e1a16407340a7a9d720dcfe151446554465f1a52",
+    "buildContextSha256": "619490c8d84fa4f02dc43eead5aa8ec5ca8bf2a8126e5d80bd119b0131219a0a"
+  },
+  "budgets": {
+    "largestJavaScriptRawBytes": 921600,
+    "totalCompressedBytes": 6291456
+  },
+  "measurements": {
+    "largestJavaScriptRawBytes": 867885,
+    "totalCompressedBytes": 405894
+  },
+  "artifacts": [
+    {
+      "path": ".vite/manifest.json",
+      "bytes": 1349,
+      "sha256": "ada2fbc2321916cf6432780cdabecf40d85bc6c08237a4f8378bd2bc91b055fd",
+      "gzipBytes": 380
+    },
+    {
+      "path": "assets/CanvasStage-CWzOR_70.js",
+      "bytes": 867885,
+      "sha256": "104d5d3f8b85888196a9d8260e570caa90db61cc4860b3a0eb8853c20717aaec",
+      "gzipBytes": 228962
+    },
+    {
+      "path": "assets/archivo-latin-wght-normal-E0tuGl4L.woff2",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967",
+      "gzipBytes": 34961
+    },
+    {
+      "path": "assets/index-D0v_04UV.js",
+      "bytes": 259911,
+      "sha256": "487f7ada60534d3fe9ff8fe5973c5472e8f4a871e0119375f0c3a1799a107e26",
+      "gzipBytes": 78333
+    },
+    {
+      "path": "assets/index-DdlazES9.css",
+      "bytes": 5677,
+      "sha256": "3cd40efa6c9495f61b9587f1deafb17a7d9bc67b3c24e764ef16f4cf1bc20154",
+      "gzipBytes": 2080
+    },
+    {
+      "path": "assets/newsreader-latin-wght-normal-CCVVNp6i.woff2",
+      "bytes": 58084,
+      "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757",
+      "gzipBytes": 57921
+    },
+    {
+      "path": "build-context.json",
+      "bytes": 518,
+      "sha256": "619490c8d84fa4f02dc43eead5aa8ec5ca8bf2a8126e5d80bd119b0131219a0a",
+      "gzipBytes": 320
+    },
+    {
+      "path": "build-integrity.json",
+      "bytes": 815,
+      "sha256": "f9363d19a130b79cc58aa386dc884bdfc1d652bd8e0ca89413f90556c307ba70",
+      "gzipBytes": 404
+    },
+    {
+      "path": "index.html",
+      "bytes": 1133,
+      "sha256": "be37acc32b285ba855fd1725b134a713b9bf1865201bd58a46e41540f74a0117",
+      "gzipBytes": 557
+    },
+    {
+      "path": "release-manifest.json",
+      "bytes": 1889,
+      "sha256": "673cefc961ff209d84d2c5ed49de85620c602a4a9704857eb8210e1fd54683bb",
+      "gzipBytes": 834
+    },
+    {
+      "path": "third-party-licenses.json",
+      "bytes": 12187,
+      "sha256": "5fcacd8944b1c1164c1e55131f06f081adcb8a6662e3fa96e50b5b349653d4f8",
+      "gzipBytes": 1142
+    }
+  ]
+}

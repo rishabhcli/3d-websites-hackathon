@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "tsBuildInfoFile": ".dev/cache/typescript/test.tsbuildinfo",
+    "types": ["node", "vite/client", "vitest/importMeta"]
+  },
+  "include": ["playwright.config.ts", "src/**/*.ts", "src/**/*.tsx", "tests/**/*.ts"]
+}

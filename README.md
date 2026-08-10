@@ -6,7 +6,7 @@
 
 ## Repository status
 
-Implementation has not started. The repository currently contains the authoritative product and competition specifications. This README defines the production target that future code must satisfy; it does not claim that planned commands or components already exist.
+Implementation is underway at Tier 0. The repository now contains an exact Node/pnpm toolchain contract, a Vite/React calibration surface with a WebGL2-gated semantic fallback, immutable calibration geometry and view stations, ownership-checked local services, and unit, property, integration, and browser verification surfaces. This is foundation evidence, not production: no production deployment has occurred, no release gate below is complete, and the three authored hero scenes, solver, quality governor, lighting/audio, and full device/accessibility matrix remain outstanding.
 
 | Document | Authority |
 |---|---|
@@ -14,6 +14,7 @@ Implementation has not started. The repository currently contains the authoritat
 | [WINNING_IDEA.md](./WINNING_IDEA.md) | Selected concept, hard technical core, validation, build order, demo and risk analysis |
 | [README.md](./README.md) | Product contract, architecture, production and release expectations |
 | [AGENTS.md](./AGENTS.md) | Binding implementation rules for every coding agent working in this repository |
+| [GOAL.md](./GOAL.md) | Standing execution order, production milestone, and evidence contract |
 
 If these documents disagree, preserve the external requirements in HACKATHON.md, then the product intent in WINNING_IDEA.md, and resolve the conflict explicitly in an ADR instead of guessing.
 
@@ -51,17 +52,18 @@ A non-goal may become part of the product only after the core release gates pass
 
 Static CDN deployment with immutable assets, compressed scene payloads, WebGL2 fallback, capability detection, and graceful semantic fallback rather than a blank canvas.
 
-### Planned component boundaries
+### Component boundaries
 
-| Area | Production responsibility |
-|---|---|
-| `src/scenes` | Curated masks, solved geometry, camera stations, art direction |
-| `src/solver` | Back-projection, soft occupancy, optimization, sparsification |
-| `src/sculpture` | Instancing, fragment placement, materials, LOD |
-| `src/camera` | Rail, snap assistance, framing, URL state |
-| `src/lighting-audio` | Interactive light, projection-error sound, lifecycle |
-| `src/quality` | Capability, dynamic resolution, thermal/frame budget |
-| `src/accessibility` | HTML semantic mirror, 2D gallery, reduced motion, controls |
+| Area | Production responsibility | Current implementation |
+|---|---|---|
+| `src/scenes` | Curated masks, solved geometry, camera stations, art direction | Deterministic calibration-scene state only; authored hero scenes remain outstanding |
+| `src/solver` | Back-projection, soft occupancy, optimization, sparsification | Not created; generator work remains gated behind curated-scene polish |
+| `src/sculpture` | Instancing, fragment placement, materials, LOD | Immutable deterministic calibration geometry only |
+| `src/camera` | Rail, snap assistance, framing, URL state | Immutable calibration view stations only |
+| `src/gallery` | React and React Three Fiber application composition | Calibration canvas, viewpoint controls, capability routing, and semantic fallback composition |
+| `src/lighting-audio` | Interactive light, projection-error sound, lifecycle | Not created |
+| `src/quality` | Capability, dynamic resolution, thermal/frame budget | Not created |
+| `src/accessibility` | HTML semantic mirror, 2D gallery, reduced motion, controls | Semantic meaning contract for the calibration slice; full gallery equivalent remains outstanding |
 
 Dependencies should flow from applications/adapters toward typed domain packages. Domain logic must remain testable without UI, network, cloud credentials, or third-party services. Infrastructure code may assemble components but must not become the only place where product invariants are enforced.
 
@@ -138,43 +140,60 @@ Performance budgets must be set before optimization and enforced in CI for suppo
 
 Accessibility is a release gate, not a polish task. The production interface must include semantic structure, keyboard support, visible focus, sufficient contrast, non-color status cues, reduced-motion behavior where relevant, zoom/reflow, readable errors, and an equivalent representation for information conveyed through canvas, charts, audio, maps, camera, or animation.
 
-## Planned repository layout
+## Repository layout
+
+Current non-generated source and verification layout:
 
 ```text
 /
-├── README.md                 # Product and operating contract
+├── .github/workflows/ci.yml  # Clean-checkout verification
 ├── AGENTS.md                 # Binding implementation rules for coding agents
+├── GOAL.md                   # Standing execution and production contract
 ├── HACKATHON.md              # External rules and submission facts
+├── README.md                 # Product and operating contract
 ├── WINNING_IDEA.md           # Selected product/technical blueprint
-├── src/scenes/
-├── src/solver/
-├── src/sculpture/
-├── src/camera/
-├── src/lighting-audio/
-├── src/quality/
-├── src/accessibility/
-├── tests/                    # Unit, property, integration, E2E, resilience
-├── docs/                     # ADRs, threat model, runbooks, evaluation
-└── infra/                    # Reproducible deployment and environment policy
+├── Makefile                  # Stable contributor command surface
+├── package.json              # Exact scripts and dependencies
+├── pnpm-lock.yaml            # Locked dependency graph
+├── pnpm-workspace.yaml       # Install and supply-chain policy
+├── ports.env                 # Reserved local-service assignments
+├── adr/                      # Accepted architecture decisions
+├── docs/                     # Dependency and operating documentation
+├── evidence/                 # Regenerable, committed Tier 0 evidence
+├── scripts/                  # Build, verification, and owned-service lifecycle
+├── src/
+│   ├── accessibility/
+│   ├── camera/
+│   ├── gallery/
+│   ├── scenes/
+│   └── sculpture/
+└── tests/
+    ├── e2e/
+    ├── integration/
+    └── property/
 ```
 
-This is a boundary contract, not a command to create empty directories. Add a directory when it owns working code, tests, and documentation.
+The planned ownership areas `src/solver`, `src/lighting-audio`, `src/quality`, and `infra` are deliberately absent until they own working code, tests, and documentation. Directory presence is not accepted as progress.
 
 ## Development command contract
 
-No commands are advertised as working until the corresponding toolchain is committed. The first production scaffold must expose one documented, cross-platform command surface, preferably through a checked-in task runner or Makefile:
+With the exact Node 24.19.0 and pnpm 11.20.0 versions selected by `.node-version`, `.nvmrc`, and `package.json`, the checked-in Makefile and package scripts expose this current command surface:
 
-| Command | Required behavior |
-|---|---|
-| `bootstrap` | Verify tool versions, install locked dependencies, initialize only local non-secret state |
-| `check` | Format check, lint, type/static analysis, schema/config validation |
-| `test` | Deterministic unit and property suites |
-| `test-integration` | Real boundary tests using isolated local/test dependencies |
-| `test-e2e` | Supported user workflows and failure states |
-| `eval` | Reproduce committed domain evaluation and metrics |
-| `build` | Produce release artifacts from a clean checkout |
-| `run-local` | Start the complete local system or a documented production-equivalent subset |
-| `release-check` | Run all blocking gates, artifact/SBOM generation, and policy checks |
+| Make target | Equivalent package command | Current behavior |
+|---|---|---|
+| `make bootstrap` | `pnpm run bootstrap` | Verify exact tool versions, install the frozen lockfile, and install Chromium below ignored `.dev/` state |
+| `make check` | `pnpm run check` | Check formatting, lint, TypeScript, domain boundaries, and dead code |
+| `make test` | `pnpm run test` | Run the deterministic Vitest unit, property, and integration suites with coverage, starting and cleaning up only owned services |
+| `make test-integration` | `pnpm run test:integration` | Run the isolated owned-service contract tests |
+| `make test-e2e` | `pnpm run test:e2e` | Run Playwright user, semantic fallback, and reduced-motion paths on the owned projection harness |
+| `make eval` | `pnpm run eval` | Regenerate the current Tier 0 dependency register and evidence manifest; it is not a projection-quality evaluation |
+| `make build` | `pnpm run build` | Type-check, emit the static artifact, enforce bundle budgets, and generate build integrity and licence evidence |
+| `make run-local` | `pnpm run dev:up` | Preflight and start the four owned services on literal `127.0.0.1:4100-4103` |
+| `make dev-health` | `pnpm run dev:health` | Prove process ownership and exact readiness for all four services |
+| `make dev-down` | `pnpm run dev:down` | Stop only processes whose recorded identity and ownership still match |
+| `make release-check` | `pnpm run verify-all` | Run the current Tier 0 preflight, services, checks, tests, build, audit, evidence, browser, final-health, and owned-cleanup sequence |
+
+`pnpm run dev:preflight` is also available as the fail-closed port and ownership check. These commands establish only the current Tier 0 foundation contract; they do not establish production deployment or any of the six product release gates.
 
 A new contributor should be able to move from a clean checkout to a verified local system without tribal knowledge.
 

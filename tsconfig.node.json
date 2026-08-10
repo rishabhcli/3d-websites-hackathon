@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022"],
+    "tsBuildInfoFile": ".dev/cache/typescript/node.tsbuildinfo",
+    "types": ["node"]
+  },
+  "include": ["eslint.config.js", "vite.config.ts", "vitest.config.ts"]
+}

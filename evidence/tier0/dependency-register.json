@@ -1,0 +1,2182 @@
+{
+  "schemaVersion": 2,
+  "project": "3d-websites-hackathon",
+  "command": "pnpm run evidence:generate",
+  "seed": null,
+  "inputsDigestAlgorithm": "sha256-path-nul-body-nul-v1",
+  "inputsSha256": "7ac07e208d904e81e2962f9847a4484e3d1c0eb1291428306222648f817f3a5e",
+  "review": {
+    "snapshotCommand": "pnpm run dependency-review:refresh",
+    "reviewedAt": "2026-08-10T07:15:53.520Z",
+    "packageJsonSha256": "4d76b5f3466ed6e0fe2739d4bc522c4672dee21a21f3aad474415cb6429935ae",
+    "lockfileSha256": "b9b6af63cf9f4f505901a1f746914673307003633039ffa6f714f19adc0fd8f3",
+    "primaryPackageMetadataSource": {
+      "baseUrl": "https://registry.npmjs.org/",
+      "role": "Primary package publication metadata for release dates, dist-tags, deprecation, and licence."
+    },
+    "advisoryHistorySource": {
+      "endpoint": "https://api.osv.dev/v1/querybatch",
+      "role": "Known-advisory history by npm package and exact selected version.",
+      "limitation": "OSV is an advisory database, not a proof that unlisted vulnerabilities or incidents do not exist."
+    },
+    "currentResolvedLockfileAudit": {
+      "command": "pnpm audit --json --audit-level low",
+      "registry": "https://registry.npmjs.org/",
+      "exitCode": 0,
+      "advisoryIds": [],
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "dependencyCounts": {
+        "production": 21,
+        "development": 578,
+        "optional": 72,
+        "total": 599
+      },
+      "limitation": "The audit covers the resolved lockfile at review time; it is not a complete package security history."
+    },
+    "boundary": "Evidence generation is offline and consumes the committed dated review snapshot. Refreshing package/advisory observations is a separate explicit network command."
+  },
+  "dependencies": [
+    {
+      "name": "@axe-core/playwright",
+      "version": "4.12.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MPL-2.0",
+        "installedManifest": "MPL-2.0",
+        "primaryRegistrySelectedVersion": "MPL-2.0",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40axe-core%2Fplaywright",
+        "selectedPublishedAt": "2026-06-23T15:31:17.929Z",
+        "lockedReleaseAgeDaysAtReview": 47,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "4.12.1",
+        "latestPublishedAt": "2026-06-23T15:31:17.929Z",
+        "latestReleaseAgeDaysAtReview": 47,
+        "packageMetadataModifiedAt": "2026-08-06T13:47:28.866Z",
+        "repositoryUrl": "git+https://github.com/dequelabs/axe-core-npm.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Test-only browser automation. Repository bootstrap installs a platform Chromium build under .dev/cache; browser executables and this package are excluded from deployment.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 49390,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@eslint/js",
+      "version": "9.39.5",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-behind-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40eslint%2Fjs",
+        "selectedPublishedAt": "2026-07-10T20:16:17.272Z",
+        "lockedReleaseAgeDaysAtReview": 30,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "10.0.1",
+        "latestPublishedAt": "2026-02-06T22:34:56.290Z",
+        "latestReleaseAgeDaysAtReview": 184,
+        "packageMetadataModifiedAt": "2026-07-10T20:16:17.404Z",
+        "repositoryUrl": "git+https://github.com/eslint/eslint.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 15798,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@fontsource-variable/archivo",
+      "version": "5.3.0",
+      "scope": "runtime",
+      "license": {
+        "spdxExpression": "OFL-1.1",
+        "installedManifest": "OFL-1.1",
+        "primaryRegistrySelectedVersion": "OFL-1.1",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40fontsource-variable%2Farchivo",
+        "selectedPublishedAt": "2026-07-19T03:49:26.925Z",
+        "lockedReleaseAgeDaysAtReview": 22,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "5.3.0",
+        "latestPublishedAt": "2026-07-19T03:49:26.925Z",
+        "latestReleaseAgeDaysAtReview": 22,
+        "packageMetadataModifiedAt": "2026-07-19T03:49:27.255Z",
+        "repositoryUrl": "git+https://github.com/fontsource/font-files.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {
+          ".woff2": {
+            "files": 18,
+            "bytes": 1057804
+          }
+        },
+        "implication": "Browser WOFF2 font payloads are direct package data, not executable native modules; the emitted font file is measured separately.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 1084229,
+        "emittedRuntime": {
+          "classification": "exact-emitted-font-plus-shared-css-upper-bound",
+          "loadingPhase": "initial",
+          "exactFontArtifact": {
+            "path": "assets/archivo-latin-wght-normal-E0tuGl4L.woff2",
+            "bytes": 34928,
+            "gzipBytes": 34961,
+            "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+          },
+          "sharedCssArtifactUpperBound": {
+            "path": "assets/index-DdlazES9.css",
+            "bytes": 5677,
+            "gzipBytes": 2080,
+            "sha256": "3cd40efa6c9495f61b9587f1deafb17a7d9bc67b3c24e764ef16f4cf1bc20154"
+          },
+          "boundary": "Font bytes are exact for this package asset. The CSS measurement is the whole shared stylesheet and includes application and other font declarations."
+        }
+      }
+    },
+    {
+      "name": "@fontsource-variable/newsreader",
+      "version": "5.3.0",
+      "scope": "runtime",
+      "license": {
+        "spdxExpression": "OFL-1.1",
+        "installedManifest": "OFL-1.1",
+        "primaryRegistrySelectedVersion": "OFL-1.1",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40fontsource-variable%2Fnewsreader",
+        "selectedPublishedAt": "2026-07-19T03:50:51.165Z",
+        "lockedReleaseAgeDaysAtReview": 22,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "5.3.0",
+        "latestPublishedAt": "2026-07-19T03:50:51.165Z",
+        "latestReleaseAgeDaysAtReview": 22,
+        "packageMetadataModifiedAt": "2026-07-19T03:50:51.535Z",
+        "repositoryUrl": "git+https://github.com/fontsource/font-files.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {
+          ".woff2": {
+            "files": 18,
+            "bytes": 1254888
+          }
+        },
+        "implication": "Browser WOFF2 font payloads are direct package data, not executable native modules; the emitted font file is measured separately.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 1281266,
+        "emittedRuntime": {
+          "classification": "exact-emitted-font-plus-shared-css-upper-bound",
+          "loadingPhase": "initial",
+          "exactFontArtifact": {
+            "path": "assets/newsreader-latin-wght-normal-CCVVNp6i.woff2",
+            "bytes": 58084,
+            "gzipBytes": 57921,
+            "sha256": "62981321d9a3cc7a61a73792729043703fd6112da86e8ec848bb57f088578757"
+          },
+          "sharedCssArtifactUpperBound": {
+            "path": "assets/index-DdlazES9.css",
+            "bytes": 5677,
+            "gzipBytes": 2080,
+            "sha256": "3cd40efa6c9495f61b9587f1deafb17a7d9bc67b3c24e764ef16f4cf1bc20154"
+          },
+          "boundary": "Font bytes are exact for this package asset. The CSS measurement is the whole shared stylesheet and includes application and other font declarations."
+        }
+      }
+    },
+    {
+      "name": "@playwright/test",
+      "version": "1.62.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "Apache-2.0",
+        "installedManifest": "Apache-2.0",
+        "primaryRegistrySelectedVersion": "Apache-2.0",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40playwright%2Ftest",
+        "selectedPublishedAt": "2026-07-30T16:36:55.324Z",
+        "lockedReleaseAgeDaysAtReview": 10,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "1.62.1",
+        "latestPublishedAt": "2026-07-30T16:36:55.324Z",
+        "latestReleaseAgeDaysAtReview": 10,
+        "packageMetadataModifiedAt": "2026-08-10T05:48:36.682Z",
+        "repositoryUrl": "git+https://github.com/microsoft/playwright.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "playwright"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Test-only browser automation. Repository bootstrap installs a platform Chromium build under .dev/cache; browser executables and this package are excluded from deployment.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 30664,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@react-three/fiber",
+      "version": "9.7.0",
+      "scope": "runtime",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40react-three%2Ffiber",
+        "selectedPublishedAt": "2026-07-31T16:20:20.712Z",
+        "lockedReleaseAgeDaysAtReview": 9,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "9.7.0",
+        "latestPublishedAt": "2026-07-31T16:20:20.712Z",
+        "latestReleaseAgeDaysAtReview": 9,
+        "packageMetadataModifiedAt": "2026-08-07T16:39:46.548Z",
+        "repositoryUrl": "git+https://github.com/pmndrs/react-three-fiber.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Browser JavaScript that drives WebGL/GPU APIs. The direct package has no compiled native module, but runtime behavior depends on the browser graphics stack.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 2188429,
+        "emittedRuntime": {
+          "classification": "shared-chunk-upper-bound",
+          "loadingPhase": "dynamic-after-WebGL2-capability-check",
+          "artifact": {
+            "path": "assets/CanvasStage-CWzOR_70.js",
+            "bytes": 867885,
+            "gzipBytes": 228962,
+            "sha256": "104d5d3f8b85888196a9d8260e570caa90db61cc4860b3a0eb8853c20717aaec"
+          },
+          "boundary": "Measurement is the complete CanvasStage chunk, including application code and other dependencies; it is an upper bound, not marginal package attribution."
+        }
+      }
+    },
+    {
+      "name": "@testing-library/dom",
+      "version": "10.4.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40testing-library%2Fdom",
+        "selectedPublishedAt": "2025-07-27T13:23:37.151Z",
+        "lockedReleaseAgeDaysAtReview": 378,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "10.4.1",
+        "latestPublishedAt": "2025-07-27T13:23:37.151Z",
+        "latestReleaseAgeDaysAtReview": 378,
+        "packageMetadataModifiedAt": "2026-08-07T04:22:44.265Z",
+        "repositoryUrl": "git+https://github.com/testing-library/dom-testing-library.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 2428460,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@testing-library/jest-dom",
+      "version": "7.0.0",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-behind-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40testing-library%2Fjest-dom",
+        "selectedPublishedAt": "2026-07-20T19:07:31.026Z",
+        "lockedReleaseAgeDaysAtReview": 20,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "7.0.1",
+        "latestPublishedAt": "2026-08-09T23:44:33.598Z",
+        "latestReleaseAgeDaysAtReview": 0,
+        "packageMetadataModifiedAt": "2026-08-09T23:44:34.054Z",
+        "repositoryUrl": "git+https://github.com/testing-library/jest-dom.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 331770,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@testing-library/react",
+      "version": "16.3.2",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40testing-library%2Freact",
+        "selectedPublishedAt": "2026-01-19T10:59:08.185Z",
+        "lockedReleaseAgeDaysAtReview": 202,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "16.3.2",
+        "latestPublishedAt": "2026-01-19T10:59:08.185Z",
+        "latestReleaseAgeDaysAtReview": 202,
+        "packageMetadataModifiedAt": "2026-08-07T04:22:50.257Z",
+        "repositoryUrl": "git+https://github.com/testing-library/react-testing-library.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 336758,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@testing-library/user-event",
+      "version": "14.6.3",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40testing-library%2Fuser-event",
+        "selectedPublishedAt": "2026-08-03T21:52:13.783Z",
+        "lockedReleaseAgeDaysAtReview": 6,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "14.6.3",
+        "latestPublishedAt": "2026-08-03T21:52:13.783Z",
+        "latestReleaseAgeDaysAtReview": 6,
+        "packageMetadataModifiedAt": "2026-08-07T04:22:48.200Z",
+        "repositoryUrl": "git+https://github.com/testing-library/user-event.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 434122,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@types/node",
+      "version": "24.13.3",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-behind-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40types%2Fnode",
+        "selectedPublishedAt": "2026-07-08T06:48:03.261Z",
+        "lockedReleaseAgeDaysAtReview": 33,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "26.2.0",
+        "latestPublishedAt": "2026-08-07T17:52:06.875Z",
+        "latestReleaseAgeDaysAtReview": 2,
+        "packageMetadataModifiedAt": "2026-08-07T17:52:07.029Z",
+        "repositoryUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 2543416,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@types/react",
+      "version": "19.2.18",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40types%2Freact",
+        "selectedPublishedAt": "2026-07-30T21:54:03.456Z",
+        "lockedReleaseAgeDaysAtReview": 10,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "19.2.18",
+        "latestPublishedAt": "2026-07-30T21:54:03.456Z",
+        "latestReleaseAgeDaysAtReview": 10,
+        "packageMetadataModifiedAt": "2026-07-30T21:54:03.600Z",
+        "repositoryUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 408503,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.2.4",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40types%2Freact-dom",
+        "selectedPublishedAt": "2026-07-30T21:53:05.684Z",
+        "lockedReleaseAgeDaysAtReview": 10,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "19.2.4",
+        "latestPublishedAt": "2026-07-30T21:53:05.684Z",
+        "latestReleaseAgeDaysAtReview": 10,
+        "packageMetadataModifiedAt": "2026-07-30T21:53:05.821Z",
+        "repositoryUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 30329,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@types/three",
+      "version": "0.184.0",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-behind-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40types%2Fthree",
+        "selectedPublishedAt": "2026-04-16T19:29:34.603Z",
+        "lockedReleaseAgeDaysAtReview": 115,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "0.185.4",
+        "latestPublishedAt": "2026-08-04T20:04:52.689Z",
+        "latestReleaseAgeDaysAtReview": 5,
+        "packageMetadataModifiedAt": "2026-08-04T20:04:52.953Z",
+        "repositoryUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 1848044,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.0.5",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40vitejs%2Fplugin-react",
+        "selectedPublishedAt": "2026-07-30T10:12:02.149Z",
+        "lockedReleaseAgeDaysAtReview": 10,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "6.0.5",
+        "latestPublishedAt": "2026-07-30T10:12:02.149Z",
+        "latestReleaseAgeDaysAtReview": 10,
+        "packageMetadataModifiedAt": "2026-07-30T10:12:02.633Z",
+        "repositoryUrl": "git+https://github.com/vitejs/vite-plugin-react.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 42694,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "@vitest/coverage-v8",
+      "version": "4.1.10",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/%40vitest%2Fcoverage-v8",
+        "selectedPublishedAt": "2026-07-06T06:44:13.365Z",
+        "lockedReleaseAgeDaysAtReview": 35,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "4.1.10",
+        "latestPublishedAt": "2026-07-06T06:44:13.365Z",
+        "latestReleaseAgeDaysAtReview": 35,
+        "packageMetadataModifiedAt": "2026-07-24T11:43:32.235Z",
+        "repositoryUrl": "git+https://github.com/vitest-dev/vitest.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Test-only JavaScript using the pinned Node runtime V8 coverage interface; no package binary is deployed.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 26789,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "dependency-cruiser",
+      "version": "18.1.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/dependency-cruiser",
+        "selectedPublishedAt": "2026-08-02T20:05:42.184Z",
+        "lockedReleaseAgeDaysAtReview": 7,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "18.1.1",
+        "latestPublishedAt": "2026-08-02T20:05:42.184Z",
+        "latestReleaseAgeDaysAtReview": 7,
+        "packageMetadataModifiedAt": "2026-08-07T15:35:11.953Z",
+        "repositoryUrl": "git+https://github.com/sverweij/dependency-cruiser.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "depcruise",
+            "depcruise-baseline",
+            "depcruise-fmt",
+            "depcruise-wrap-stream-in-html",
+            "dependency-cruise",
+            "dependency-cruiser"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 1027043,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "eslint",
+      "version": "9.39.5",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-behind-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/eslint",
+        "selectedPublishedAt": "2026-07-10T20:41:47.507Z",
+        "lockedReleaseAgeDaysAtReview": 30,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "10.8.1",
+        "latestPublishedAt": "2026-08-07T20:21:24.770Z",
+        "latestReleaseAgeDaysAtReview": 2,
+        "packageMetadataModifiedAt": "2026-08-07T20:21:24.977Z",
+        "repositoryUrl": "git+https://github.com/eslint/eslint.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "eslint"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 3012854,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "eslint-config-prettier",
+      "version": "10.1.8",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/eslint-config-prettier",
+        "selectedPublishedAt": "2025-07-18T18:40:08.244Z",
+        "lockedReleaseAgeDaysAtReview": 387,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "10.1.8",
+        "latestPublishedAt": "2025-07-18T18:40:08.244Z",
+        "latestReleaseAgeDaysAtReview": 387,
+        "packageMetadataModifiedAt": "2025-07-20T23:16:08.192Z",
+        "repositoryUrl": "git+https://github.com/prettier/eslint-config-prettier.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [
+          "GHSA-f29h-pxvx-f335",
+          "MAL-2025-6022"
+        ],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "eslint-config-prettier"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 63636,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "eslint-plugin-jsx-a11y",
+      "version": "6.10.2",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/eslint-plugin-jsx-a11y",
+        "selectedPublishedAt": "2024-10-26T04:45:18.067Z",
+        "lockedReleaseAgeDaysAtReview": 653,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "6.10.2",
+        "latestPublishedAt": "2024-10-26T04:45:18.067Z",
+        "latestReleaseAgeDaysAtReview": 653,
+        "packageMetadataModifiedAt": "2024-10-26T04:45:18.259Z",
+        "repositoryUrl": "git+https://github.com/jsx-eslint/eslint-plugin-jsx-a11y.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 755202,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/eslint-plugin-react-hooks",
+        "selectedPublishedAt": "2026-04-17T18:03:19.591Z",
+        "lockedReleaseAgeDaysAtReview": 114,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "7.1.1",
+        "latestPublishedAt": "2026-04-17T18:03:19.591Z",
+        "latestReleaseAgeDaysAtReview": 114,
+        "packageMetadataModifiedAt": "2026-08-07T16:31:24.341Z",
+        "repositoryUrl": "git+https://github.com/facebook/react.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 4100377,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "version": "0.5.3",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/eslint-plugin-react-refresh",
+        "selectedPublishedAt": "2026-06-14T12:46:34.395Z",
+        "lockedReleaseAgeDaysAtReview": 56,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "0.5.3",
+        "latestPublishedAt": "2026-06-14T12:46:34.395Z",
+        "latestReleaseAgeDaysAtReview": 56,
+        "packageMetadataModifiedAt": "2026-06-14T12:46:34.722Z",
+        "repositoryUrl": "git+https://github.com/ArnaudBarre/eslint-plugin-react-refresh.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 24212,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "fast-check",
+      "version": "4.9.0",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/fast-check",
+        "selectedPublishedAt": "2026-07-08T21:33:03.026Z",
+        "lockedReleaseAgeDaysAtReview": 32,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "4.9.0",
+        "latestPublishedAt": "2026-07-08T21:33:03.026Z",
+        "latestReleaseAgeDaysAtReview": 32,
+        "packageMetadataModifiedAt": "2026-07-08T21:33:03.350Z",
+        "repositoryUrl": "git+https://github.com/dubzzz/fast-check.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 1434269,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "globals",
+      "version": "17.9.0",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/globals",
+        "selectedPublishedAt": "2026-08-02T15:24:47.623Z",
+        "lockedReleaseAgeDaysAtReview": 7,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "17.9.0",
+        "latestPublishedAt": "2026-08-02T15:24:47.623Z",
+        "latestReleaseAgeDaysAtReview": 7,
+        "packageMetadataModifiedAt": "2026-08-02T15:24:47.780Z",
+        "repositoryUrl": "git+https://github.com/sindresorhus/globals.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 252549,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "jsdom",
+      "version": "30.0.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/jsdom",
+        "selectedPublishedAt": "2026-07-29T04:18:42.378Z",
+        "lockedReleaseAgeDaysAtReview": 12,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "30.0.1",
+        "latestPublishedAt": "2026-07-29T04:18:42.378Z",
+        "latestReleaseAgeDaysAtReview": 12,
+        "packageMetadataModifiedAt": "2026-07-29T04:18:42.751Z",
+        "repositoryUrl": "git+https://github.com/jsdom/jsdom.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 7088796,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "knip",
+      "version": "6.32.0",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "ISC",
+        "installedManifest": "ISC",
+        "primaryRegistrySelectedVersion": "ISC",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/knip",
+        "selectedPublishedAt": "2026-08-06T04:59:57.155Z",
+        "lockedReleaseAgeDaysAtReview": 4,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "6.32.0",
+        "latestPublishedAt": "2026-08-06T04:59:57.155Z",
+        "latestReleaseAgeDaysAtReview": 4,
+        "packageMetadataModifiedAt": "2026-08-06T04:59:57.280Z",
+        "repositoryUrl": "git+https://github.com/webpro-nl/knip.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "knip",
+            "knip-bun"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 1972778,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "prettier",
+      "version": "3.9.6",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/prettier",
+        "selectedPublishedAt": "2026-07-21T05:51:53.987Z",
+        "lockedReleaseAgeDaysAtReview": 20,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "3.9.6",
+        "latestPublishedAt": "2026-07-21T05:51:53.987Z",
+        "latestReleaseAgeDaysAtReview": 20,
+        "packageMetadataModifiedAt": "2026-07-21T05:51:54.134Z",
+        "repositoryUrl": "git+https://github.com/prettier/prettier.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "prettier"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 9956328,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "react",
+      "version": "19.2.8",
+      "scope": "runtime",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/react",
+        "selectedPublishedAt": "2026-07-21T15:41:28.716Z",
+        "lockedReleaseAgeDaysAtReview": 19,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "19.2.8",
+        "latestPublishedAt": "2026-07-21T15:41:28.716Z",
+        "latestReleaseAgeDaysAtReview": 19,
+        "packageMetadataModifiedAt": "2026-08-07T16:32:36.241Z",
+        "repositoryUrl": "git+https://github.com/react/react.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [
+          "GHSA-g53w-52xc-2j85",
+          "GHSA-hg79-j56m-fxgv"
+        ],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Static browser JavaScript. No direct compiled-native payload or install lifecycle hook was observed in the installed direct package.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 171598,
+        "emittedRuntime": {
+          "classification": "shared-chunk-upper-bound",
+          "loadingPhase": "initial",
+          "artifact": {
+            "path": "assets/index-D0v_04UV.js",
+            "bytes": 259911,
+            "gzipBytes": 78333,
+            "sha256": "487f7ada60534d3fe9ff8fe5973c5472e8f4a871e0119375f0c3a1799a107e26"
+          },
+          "boundary": "Measurement is the complete initial JavaScript chunk, including application code and other dependencies; it is an upper bound, not marginal package attribution."
+        }
+      }
+    },
+    {
+      "name": "react-dom",
+      "version": "19.2.8",
+      "scope": "runtime",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/react-dom",
+        "selectedPublishedAt": "2026-07-21T15:41:41.267Z",
+        "lockedReleaseAgeDaysAtReview": 19,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "19.2.8",
+        "latestPublishedAt": "2026-07-21T15:41:41.267Z",
+        "latestReleaseAgeDaysAtReview": 19,
+        "packageMetadataModifiedAt": "2026-08-07T16:32:49.461Z",
+        "repositoryUrl": "git+https://github.com/react/react.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [
+          "GHSA-mvjj-gqq2-p4hw"
+        ],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Static browser JavaScript. No direct compiled-native payload or install lifecycle hook was observed in the installed direct package.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 7319407,
+        "emittedRuntime": {
+          "classification": "shared-chunk-upper-bound",
+          "loadingPhase": "initial",
+          "artifact": {
+            "path": "assets/index-D0v_04UV.js",
+            "bytes": 259911,
+            "gzipBytes": 78333,
+            "sha256": "487f7ada60534d3fe9ff8fe5973c5472e8f4a871e0119375f0c3a1799a107e26"
+          },
+          "boundary": "Measurement is the complete initial JavaScript chunk, including application code and other dependencies; it is an upper bound, not marginal package attribution."
+        }
+      }
+    },
+    {
+      "name": "stylelint",
+      "version": "17.14.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/stylelint",
+        "selectedPublishedAt": "2026-07-20T01:00:57.084Z",
+        "lockedReleaseAgeDaysAtReview": 21,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "17.14.1",
+        "latestPublishedAt": "2026-07-20T01:00:57.084Z",
+        "latestReleaseAgeDaysAtReview": 21,
+        "packageMetadataModifiedAt": "2026-07-20T01:00:57.601Z",
+        "repositoryUrl": "git+https://github.com/stylelint/stylelint.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "stylelint"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 962614,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "stylelint-config-standard",
+      "version": "40.0.0",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/stylelint-config-standard",
+        "selectedPublishedAt": "2026-01-15T12:10:27.794Z",
+        "lockedReleaseAgeDaysAtReview": 206,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "40.0.0",
+        "latestPublishedAt": "2026-01-15T12:10:27.794Z",
+        "latestReleaseAgeDaysAtReview": 206,
+        "packageMetadataModifiedAt": "2026-01-15T12:10:28.420Z",
+        "repositoryUrl": "git+https://github.com/stylelint/stylelint-config-standard.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 11773,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "three",
+      "version": "0.182.0",
+      "scope": "runtime",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-behind-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/three",
+        "selectedPublishedAt": "2025-12-10T16:30:23.346Z",
+        "lockedReleaseAgeDaysAtReview": 242,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "0.185.1",
+        "latestPublishedAt": "2026-07-01T14:04:30.373Z",
+        "latestReleaseAgeDaysAtReview": 39,
+        "packageMetadataModifiedAt": "2026-07-01T14:04:30.525Z",
+        "repositoryUrl": "git+https://github.com/mrdoob/three.js.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [
+          "GHSA-fq6p-x6j3-cmmq"
+        ],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {
+          ".ttf": {
+            "files": 1,
+            "bytes": 18068
+          },
+          ".wasm": {
+            "files": 5,
+            "bytes": 4202877
+          }
+        },
+        "implication": "Browser JavaScript that drives WebGL/GPU APIs. The installed package also contains auxiliary WASM/font payloads counted above; those package payloads are not automatically deployment cost, so the emitted chunk measurement below remains authoritative.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 36093423,
+        "emittedRuntime": {
+          "classification": "shared-chunk-upper-bound",
+          "loadingPhase": "dynamic-after-WebGL2-capability-check",
+          "artifact": {
+            "path": "assets/CanvasStage-CWzOR_70.js",
+            "bytes": 867885,
+            "gzipBytes": 228962,
+            "sha256": "104d5d3f8b85888196a9d8260e570caa90db61cc4860b3a0eb8853c20717aaec"
+          },
+          "boundary": "Measurement is the complete CanvasStage chunk, including application code and other dependencies; it is an upper bound, not marginal package attribution."
+        }
+      }
+    },
+    {
+      "name": "typescript",
+      "version": "6.0.3",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "Apache-2.0",
+        "installedManifest": "Apache-2.0",
+        "primaryRegistrySelectedVersion": "Apache-2.0",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-behind-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/typescript",
+        "selectedPublishedAt": "2026-04-16T23:38:27.905Z",
+        "lockedReleaseAgeDaysAtReview": 115,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "7.0.2",
+        "latestPublishedAt": "2026-07-08T15:55:18.431Z",
+        "latestReleaseAgeDaysAtReview": 32,
+        "packageMetadataModifiedAt": "2026-08-09T08:29:02.151Z",
+        "repositoryUrl": "git+https://github.com/microsoft/TypeScript.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "tsc",
+            "tsserver"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 24350559,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "typescript-eslint",
+      "version": "8.66.0",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/typescript-eslint",
+        "selectedPublishedAt": "2026-08-03T17:36:21.323Z",
+        "lockedReleaseAgeDaysAtReview": 6,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "8.66.0",
+        "latestPublishedAt": "2026-08-03T17:36:21.323Z",
+        "latestReleaseAgeDaysAtReview": 6,
+        "packageMetadataModifiedAt": "2026-08-07T16:14:33.015Z",
+        "repositoryUrl": "git+https://github.com/typescript-eslint/typescript-eslint.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 40692,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "vite",
+      "version": "8.2.1",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/vite",
+        "selectedPublishedAt": "2026-08-06T13:47:48.588Z",
+        "lockedReleaseAgeDaysAtReview": 3,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "8.2.1",
+        "latestPublishedAt": "2026-08-06T13:47:48.588Z",
+        "latestReleaseAgeDaysAtReview": 3,
+        "packageMetadataModifiedAt": "2026-08-06T13:47:48.915Z",
+        "repositoryUrl": "git+https://github.com/vitejs/vite.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [
+          "GHSA-353f-5xf4-qw67",
+          "GHSA-356w-63v5-8wf4",
+          "GHSA-4r4m-qw57-chr8",
+          "GHSA-4w7w-66w2-5vf9",
+          "GHSA-64vr-g452-qvp3",
+          "GHSA-859w-5945-r5v3",
+          "GHSA-8jhw-289h-jh2g",
+          "GHSA-92r3-m2mg-pj97",
+          "GHSA-93m4-6634-74q7",
+          "GHSA-9cwx-2883-4wfx",
+          "GHSA-c24v-8rfc-w8vw",
+          "GHSA-c27g-q93r-2cwf",
+          "GHSA-fx2h-pf6j-xcff",
+          "GHSA-g4jq-h2w9-997c",
+          "GHSA-jqfw-vq24-v9c3",
+          "GHSA-mv48-hcvh-8jj8",
+          "GHSA-p9ff-h696-f583",
+          "GHSA-v2wj-q39q-566r",
+          "GHSA-v6wh-96g9-6wx3",
+          "GHSA-vg6x-rcgg-rjx6",
+          "GHSA-x574-m823-4x7w",
+          "GHSA-xcj6-pq6g-qj4x"
+        ],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "vite"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development/build CLI. Vite reaches a platform-specific Rolldown native binding transitively during the build; neither the CLI nor binding is deployed in the static site.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 2346667,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "vitest",
+      "version": "4.1.10",
+      "scope": "development",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/vitest",
+        "selectedPublishedAt": "2026-07-06T06:44:42.684Z",
+        "lockedReleaseAgeDaysAtReview": 35,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "4.1.10",
+        "latestPublishedAt": "2026-07-06T06:44:42.684Z",
+        "latestReleaseAgeDaysAtReview": 35,
+        "packageMetadataModifiedAt": "2026-07-24T11:43:58.944Z",
+        "repositoryUrl": "git+https://github.com/vitest-dev/vitest.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [
+          "GHSA-5xrq-8626-4rwp",
+          "GHSA-9crc-q9x8-hgqq"
+        ],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [
+            "vitest"
+          ],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Development-only direct package; direct manifest executables are local tooling and installed package payloads do not deploy.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 1912282,
+        "emittedRuntime": {
+          "classification": "development-only-not-attributed-to-deployable",
+          "measuredDeployedBytes": null,
+          "basis": "The package is declared only in devDependencies. Production output is the static dist artifact; this field does not claim a per-package zero-byte proof."
+        }
+      }
+    },
+    {
+      "name": "zod",
+      "version": "4.4.3",
+      "scope": "runtime",
+      "license": {
+        "spdxExpression": "MIT",
+        "installedManifest": "MIT",
+        "primaryRegistrySelectedVersion": "MIT",
+        "status": "matched-installed-and-registry-manifests"
+      },
+      "maintenance": {
+        "observedStatus": "selected-version-is-latest-dist-tag-at-review",
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "primaryMetadataUrl": "https://registry.npmjs.org/zod",
+        "selectedPublishedAt": "2026-05-04T07:06:40.819Z",
+        "lockedReleaseAgeDaysAtReview": 98,
+        "selectedDeprecatedNotice": null,
+        "latestVersion": "4.4.3",
+        "latestPublishedAt": "2026-05-04T07:06:40.819Z",
+        "latestReleaseAgeDaysAtReview": 98,
+        "packageMetadataModifiedAt": "2026-08-09T18:10:14.713Z",
+        "repositoryUrl": "git+https://github.com/colinhacks/zod.git",
+        "boundary": "This is a dated npm publication/deprecation observation. Release recency does not prove maintainer responsiveness or future support."
+      },
+      "securityHistory": {
+        "reviewedAt": "2026-08-10T07:15:53.520Z",
+        "knownOsvAdvisoryIdsForPackage": [
+          "GHSA-m95q-7qp3-xv42"
+        ],
+        "osvAdvisoryIdsAffectingSelectedVersion": [],
+        "selectedVersionObservation": "osv-returned-no-match-for-exact-version-at-review",
+        "resolvedLockfileAuditEvidenceRef": "#/review/currentResolvedLockfileAudit",
+        "blockingCurrentAdvisoryCommand": "pnpm audit --audit-level high",
+        "boundary": "Package-wide IDs are historical database matches, not necessarily applicable to this version. An empty list or audit response is not a claim that vulnerabilities or incidents never existed."
+      },
+      "nativeBinary": {
+        "directManifestSignals": {
+          "executableNames": [],
+          "installLifecycleScripts": [],
+          "osConstraints": [],
+          "cpuConstraints": [],
+          "gypfile": false
+        },
+        "directPackageBinaryPayloads": {},
+        "implication": "Static browser JavaScript. No direct compiled-native payload or install lifecycle hook was observed in the installed direct package.",
+        "boundary": "Signals and payload counts describe the installed direct package. The Vite and Playwright transitive/platform implications are explicitly reviewed exceptions; no broader transitive-native absence is claimed."
+      },
+      "cost": {
+        "installedDirectPackageBytes": 4558122,
+        "emittedRuntime": {
+          "classification": "shared-chunk-upper-bound",
+          "loadingPhase": "initial",
+          "artifact": {
+            "path": "assets/index-D0v_04UV.js",
+            "bytes": 259911,
+            "gzipBytes": 78333,
+            "sha256": "487f7ada60534d3fe9ff8fe5973c5472e8f4a871e0119375f0c3a1799a107e26"
+          },
+          "boundary": "Measurement is the complete initial JavaScript chunk, including application code and other dependencies; it is an upper bound, not marginal package attribution."
+        }
+      }
+    }
+  ]
+}

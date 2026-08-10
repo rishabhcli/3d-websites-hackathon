@@ -1,0 +1,23 @@
+packages:
+  - '.'
+
+storeDir: .dev/cache/pnpm-store
+engineStrict: true
+savePrefix: ''
+strictPeerDependencies: true
+autoInstallPeers: false
+preferFrozenLockfile: true
+verifyDepsBeforeRun: error
+minimumReleaseAge: 1440
+minimumReleaseAgeStrict: true
+minimumReleaseAgeIgnoreMissingTime: false
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - semver@6.3.1
+trustLockfile: false
+blockExoticSubdeps: true
+verifyStoreIntegrity: true
+strictStorePkgContentCheck: true
+strictDepBuilds: true
+allowBuilds:
+  fsevents: false

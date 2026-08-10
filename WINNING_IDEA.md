@@ -1,6 +1,6 @@
 # 3D Websites Hackathon: Winning Idea Dossier
 
-> **Status:** One idea selected; no product name assigned; no implementation started.
+> **Status:** One idea selected; no product name assigned; implementation is underway at Tier 0; no production deployment or release gate is complete.
 > **Deadline:** August 31, 2026 at 3:00 PM PT.
 > **Ground truth:** [`HACKATHON.md`](./HACKATHON.md) is authoritative for rules and submission fields.
 

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "project": "3d-websites-hackathon",
+  "command": "pnpm run evidence:generate",
+  "seed": null,
+  "inputsDigestAlgorithm": "sha256-path-nul-body-nul-v1",
+  "inputsSha256": "7ac07e208d904e81e2962f9847a4484e3d1c0eb1291428306222648f817f3a5e",
+  "artifacts": [
+    {
+      "path": "tier0/build-budget.json",
+      "sha256": "0f69e681cb434cce829734b68a575e247b30f8b3e2841debd437438324207bec"
+    },
+    {
+      "path": "tier0/dependency-register.json",
+      "sha256": "b2a88deba77e68bd06d011ed833d3bc8fe47367ea697a6c108e124eef4177c5d"
+    }
+  ]
+}
