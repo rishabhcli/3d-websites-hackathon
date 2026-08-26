@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Multi-View Anamorphic Sculptures</title>
+    <meta
+      name="description"
+      content="One static cloud of luminous fragments that resolves into a different silhouette from each of three viewpoints. Carved by three-way voxel visual-hull intersection."
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="stage"></canvas>
+
+    <div class="hud">
+      <header class="plate plate--title">
+        <p class="eyebrow">Multi-view anamorphic sculpture</p>
+        <h1 id="sceneTitle">Passage</h1>
+        <p class="note" id="sceneNote">One cloud. A bird, a key, a hand.</p>
+      </header>
+
+      <nav class="plate plate--scenes" aria-label="Sculpture">
+        <p class="label">Sculpture</p>
+        <div class="scenePills" id="scenePills"></div>
+        <button class="ghostBtn" id="drawOpen" type="button">Draw your own</button>
+      </nav>
+
+      <section class="plate plate--readout" aria-label="Carve readout">
+        <p class="label">Carve</p>
+        <dl class="readout">
+          <div><dt>Fragments</dt><dd id="rFrag">—</dd></div>
+          <div><dt>Grid</dt><dd id="rGrid">—</dd></div>
+          <div><dt>Carve time</dt><dd id="rMs">—</dd></div>
+          <div><dt>Hull voxels</dt><dd id="rOcc">—</dd></div>
+        </dl>
+        <p class="label label--tight">Silhouette agreement · IoU</p>
+        <div class="iouRow" id="iouRow"></div>
+      </section>
+
+      <section class="plate plate--stations" aria-label="Viewpoints">
+        <p class="label">Stand here</p>
+        <div class="stations" id="stations"></div>
+      </section>
+
+      <section class="plate plate--light" aria-label="Key light">
+        <p class="label">Key light</p>
+        <div class="dial" id="lightDial" role="slider" tabindex="0" aria-label="Key light azimuth" aria-valuemin="0" aria-valuemax="360" aria-valuenow="0">
+          <div class="dial__ring"></div>
+          <div class="dial__handle" id="lightHandle"></div>
+        </div>
+        <p class="mono" id="lightVal">0°</p>
+      </section>
+
+      <p class="hint" id="hint">Drag to orbit · 1 / 2 / 3 for viewpoints · scroll to zoom</p>
+
+      <div class="progress" id="progress" hidden>
+        <div class="progress__bar"><i id="progressFill"></i></div>
+        <p class="mono" id="progressText">Carving</p>
+      </div>
+    </div>
+
+    <div class="drawer" id="drawer" hidden>
+      <div class="drawer__inner">
+        <div class="drawer__head">
+          <div>
+            <p class="eyebrow">Same algorithm, your shapes</p>
+            <h2>Draw three silhouettes</h2>
+            <p class="note">
+              Front, side and top. The carve keeps only the voxels that land inside all three at once,
+              then reports how much of each drawing actually survived.
+            </p>
+          </div>
+          <button class="ghostBtn" id="drawClose" type="button">Close</button>
+        </div>
+
+        <div class="pads" id="pads"></div>
+
+        <div class="drawer__foot">
+          <div class="drawer__tools">
+            <button class="ghostBtn" id="toolBrush" type="button" aria-pressed="true">Brush</button>
+            <button class="ghostBtn" id="toolErase" type="button" aria-pressed="false">Erase</button>
+            <label class="sizeLabel">Size <input id="brushSize" type="range" min="6" max="34" value="16" /></label>
+            <button class="ghostBtn" id="loadDemo" type="button">Load examples</button>
+            <button class="ghostBtn" id="clearAll" type="button">Clear</button>
+          </div>
+          <button class="primaryBtn" id="carveBtn" type="button">Carve</button>
+        </div>
+
+        <p class="drawer__result mono" id="drawResult">Draw in all three pads, then carve.</p>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
